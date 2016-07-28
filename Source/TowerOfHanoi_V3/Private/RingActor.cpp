@@ -23,11 +23,15 @@ void ARingActor::BeginPlay()
 void ARingActor::Tick( float DeltaTime )
 {
 	Super::Tick( DeltaTime );
-
 }
 
 
 bool ARingActor::IsLowerRingID(int32 otherRingID)
 {
 	return this->RingID < otherRingID;
+}
+
+bool ARingActor::CheckMovability(TArray<ARingActor*> ringActorsArray)
+{
+	return ringActorsArray.Num() == PoleIndexID + 1;
 }

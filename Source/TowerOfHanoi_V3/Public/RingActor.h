@@ -27,9 +27,13 @@ public:
 		bool CanBeMoved;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "-- RingActor Public Attributes --")
 		FVector LastLocation;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "-- RingActor Public Attributes --")
+		int32 PoleIndexID;
 
 	// Functions
 	UFUNCTION(BlueprintCallable, BlueprintPure, Category = "-- RingActor Public Functions --")
 		bool IsLowerRingID(int32 otherRingID);
+	UFUNCTION(BlueprintCallable, BlueprintPure, Category = "-- RingActor Public Functions --")
+		bool CheckMovability(TArray<ARingActor*> ringActorsArray);
 	
 };
