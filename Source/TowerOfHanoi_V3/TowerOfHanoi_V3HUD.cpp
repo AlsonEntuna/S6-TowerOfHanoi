@@ -9,7 +9,7 @@
 ATowerOfHanoi_V3HUD::ATowerOfHanoi_V3HUD()
 {
 	// Set the crosshair texture
-	static ConstructorHelpers::FObjectFinder<UTexture2D> CrosshiarTexObj(TEXT("/Game/FirstPerson/Textures/FirstPersonCrosshair"));
+	static ConstructorHelpers::FObjectFinder<UTexture2D> CrosshiarTexObj(TEXT("/Game/FirstPerson/Textures/Aim"));
 	CrosshairTex = CrosshiarTexObj.Object;
 }
 
@@ -30,6 +30,6 @@ void ATowerOfHanoi_V3HUD::DrawHUD()
 	// draw the crosshair
 	FCanvasTileItem TileItem( CrosshairDrawPosition, CrosshairTex->Resource, FLinearColor::White);
 	TileItem.BlendMode = SE_BLEND_Translucent;
-	Canvas->DrawItem( TileItem );
+	//Canvas->DrawItem( TileItem );
 }
 
