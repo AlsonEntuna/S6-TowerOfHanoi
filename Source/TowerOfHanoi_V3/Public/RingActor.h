@@ -3,7 +3,10 @@
 #pragma once
 
 #include "GameFramework/Actor.h"
+#include "RingActorTracker.h"
 #include "RingActor.generated.h"
+
+class ARingActorTracker;
 
 UCLASS()
 class TOWEROFHANOI_V3_API ARingActor : public AActor
@@ -26,9 +29,13 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "-- RingActor Public Attributes --")
 		bool CanBeMoved;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "-- RingActor Public Attributes --")
+		bool IsBeingDragged;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "-- RingActor Public Attributes --")
 		FVector LastLocation;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "-- RingActor Public Attributes --")
 		int32 PoleIndexID;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "-- RingActor Public Attributes --")
+		ARingActorTracker* RingActorTrackerRef;
 
 	// Functions
 	UFUNCTION(BlueprintCallable, BlueprintPure, Category = "-- RingActor Public Functions --")
