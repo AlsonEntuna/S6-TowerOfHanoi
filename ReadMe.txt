@@ -21,5 +21,4 @@ Tools Used:
 
 Disclaimer:
 
-This project is for EDUCATIONAL PURPOSES ONLY and do not intend any commercial acts. Credits goes to the owners of the respective Assets and Musics.  This repository will be 
-taken down as soon as it will be checked by the company.
+This project is for EDUCATIONAL PURPOSES ONLY and do not intend any commercial acts. Credits goes to the owners of the respective Assets and Musics.
